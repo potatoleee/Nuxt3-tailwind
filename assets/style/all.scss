@@ -16,6 +16,15 @@
     @apply font-semibold;
     font-family: 'Roboto', 'Noto Serif TC', system-ui, sans-serif;
   }
+  //為了讓東西不足時 footer 至底
+  .layout__wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .layout__footer {
+    margin-top: auto;
+  }
 }
 
 // 自己組樣式 作者建議使用在 按鈕及表單元件上，這邊用 OOCCSS 的概念來設計，必須是很重複使用且包含很多樣式在使用
