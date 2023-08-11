@@ -5,8 +5,6 @@ definePageMeta({
 </script>
 <template>
   <div>
-    <NuxtLink to="/"></NuxtLink>
-    <NuxtLink to="/about">about</NuxtLink>
     <div class="container mb-6">
       <h2 class="text-center text-4xl text-red-600">Grid</h2>
       <div class="grid grid-cols-12 gap-8">
