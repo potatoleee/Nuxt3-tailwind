@@ -1,5 +1,6 @@
 {
   "name": "nuxt-app",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -24,5 +25,9 @@
     "prettier": "^3.0.1",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "sass": "^1.65.1"
+  },
+  "engines": {
+    "node": ">= 18.17.0",
+    "npm": ">= 9.5.1"
   }
 }
