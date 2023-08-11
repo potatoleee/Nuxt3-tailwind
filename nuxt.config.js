@@ -11,8 +11,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiUrl: '',
-      path: ''
+      apiUrl: ''
     }
   },
   modules: ['@nuxtjs/tailwindcss'],
