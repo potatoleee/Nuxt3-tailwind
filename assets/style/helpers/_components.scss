@@ -1,0 +1,6 @@
+//多一頁可以這樣設定，看自己需求
+@layer components {
+  .custom {
+    @apply bg-primary-500 text-white;
+  }
+}

@@ -14,4 +14,4 @@ module.exports = {
     'prettier/prettier': 'error',
     'vue/multi-word-component-names': 'off'
   }
-}
+};

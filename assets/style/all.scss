@@ -1,0 +1,48 @@
+// @import "tailwindcss/base";
+// @import "tailwindcss/components";
+// @import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//擴充 base 基底
+@layer base {
+  // html{
+  //   font-weight: 600;
+  // }
+  html {
+    @apply font-semibold;
+    font-family: 'Roboto', 'Noto Serif TC', system-ui, sans-serif;
+  }
+}
+
+// 自己組樣式 作者建議使用在 按鈕及表單元件上，這邊用 OOCCSS 的概念來設計，必須是很重複使用且包含很多樣式在使用
+@layer components {
+  .btn {
+    @apply flex items-center rounded-md px-4 py-2 text-center focus:outline-none focus:ring-2;
+  }
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-400 focus:ring-primary-200 focus:ring-offset-2 focus:ring-offset-primary-500 disabled:bg-primary-500;
+  }
+  .btn-primary-soft {
+    @apply bg-primary-500 text-primary-500 hover:bg-primary-100 hover:text-primary-600 focus:ring-primary-600 disabled:bg-primary-500 disabled:text-primary-500 disabled:opacity-75;
+  }
+  .btn-sm {
+    @apply px-3 py-2 text-sm;
+  }
+  .btn-lg {
+    @apply px-6 py-4 text-2xl;
+  }
+}
+
+// 自組樣式
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+}
+
+@import './helpers/mixin';
+@import './helpers/components';
