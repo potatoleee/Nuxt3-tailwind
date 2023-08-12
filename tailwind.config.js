@@ -8,6 +8,7 @@ module.exports = {
     './plugins/**/*.{js,ts}',
     './app.{js,ts,vue}'
   ],
+  darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: {
       colors: {

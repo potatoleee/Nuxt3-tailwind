@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@nuxtjs/tailwindcss'],
+  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
   // css: ['@/assets/style/all.scss']
   // 如果需要在 .vue檔案下面寫我額外的 scss 這樣就不需要 import
   vite: {
